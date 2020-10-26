@@ -27,6 +27,11 @@ See:
 * https://en.wikipedia.org/wiki/Git
 * https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F
 
+Cheat-Sheet + Quick Start
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* https://training.github.com/downloads/github-git-cheat-sheet/
+
 Default branch is now main, not master
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -34,7 +39,7 @@ Default branch is now main, not master
 
 * https://github.blog/changelog/2020-10-01-the-default-branch-for-newly-created-repositories-is-now-main/
 
-Git 2.28 introduced `init.defaultBranch` which allows you to change the name of default branch,
+Git 2.28 introduced `init.defaultBranch` which allows you to change the name of the default branch,
 which used to be `master` when initializing a new Git repository.
 If `init.defaultBranch` is unset, the default is still `master`.
 
@@ -70,8 +75,11 @@ This is because you haven't committed a file yet:
   [master (root-commit) d168377] Initial commit
   % git branch -M main
 
-Best Practices + Tips
-~~~~~~~~~~~~~~~~~~~~~
+Links + Best Practices + Tips + Resources
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * https://acompiler.com/git-best-practices/#tve-jump-17323b90fc9
 * https://acompiler.com/git-tips/
+* https://try.github.io/
+* https://training.github.com/downloads/github-git-cheat-sheet/
+* https://guides.github.com/introduction/git-handbook/
