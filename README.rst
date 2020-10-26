@@ -22,6 +22,49 @@ See:
 * https://en.wikipedia.org/wiki/Git
 * https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F
 
+Default branch is now main, not master
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+... at least in Github:
+
+* https://github.blog/changelog/2020-10-01-the-default-branch-for-newly-created-repositories-is-now-main/
+
+Git 2.28 introduced `init.defaultBranch` which allows you to change the name of default branch,
+which used to be `master` when initializing a new Git repository.
+If `init.defaultBranch` is unset, the default is still `master`.
+
+See:
+
+* https://github.blog/2020-07-27-highlights-from-git-2-28/
+* https://sfconservancy.org/news/2020/jun/23/gitbranchname/
+
+If you encounter this problem when trying to rename your newly created repository:
+
+.. code-block:: console
+
+  % git init
+  % git branch -M main
+  error: refname refs/heads/master not found
+  fatal: Branch rename failed
+
+This is because you haven't committed a file yet:
+
+.. code-block:: console
+
+  % git status
+  On branch master
+
+  No commits yet
+
+  nothing to commit (create/copy files and use "git add" to track)
+
+  [ create a file ]
+
+  % git add README.rst
+  % git commit -m "Initial commit"
+  [master (root-commit) d168377] Initial commit
+  % git branch -M main
+
 Best Practices + Tips
 ~~~~~~~~~~~~~~~~~~~~~
 
