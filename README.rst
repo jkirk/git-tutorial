@@ -10,6 +10,11 @@ See:
 
 * https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
 
+.. image:: img/6a00d8341d3df553ef017c330f2ae8970b-pi.jpeg
+  :width: 600
+
+Source: Cartoon by `Geek and Poke <http://geek-and-poke.com/?offset=1352247302000>`_
+
 What is Git?
 ~~~~~~~~~~~~
 
